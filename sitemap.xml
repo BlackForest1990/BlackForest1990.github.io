@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blackforestrule.com/2022/08/09/%E4%BD%A0%E5%A5%BD/</loc>
+    
+    <lastmod>2022-08-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blackforestrule.com/categories/index.html</loc>
     
     <lastmod>2022-08-09</lastmod>
@@ -75,6 +84,13 @@
   
   <url>
     <loc>https://blackforestrule.com/categories/Letter/</loc>
+    <lastmod>2022-08-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blackforestrule.com/categories/Baby/</loc>
     <lastmod>2022-08-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
