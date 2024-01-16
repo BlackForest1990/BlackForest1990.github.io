@@ -6,7 +6,7 @@
   <link href="https://blackforest1990.github.io/atom.xml" rel="self"/>
   
   <link href="https://blackforest1990.github.io/"/>
-  <updated>2024-01-10T04:15:14.998Z</updated>
+  <updated>2024-01-16T05:28:28.190Z</updated>
   <id>https://blackforest1990.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Tcp&amp;ip</title>
+    <link href="https://blackforest1990.github.io/2024/01/16/Tcp-ip/"/>
+    <id>https://blackforest1990.github.io/2024/01/16/Tcp-ip/</id>
+    <published>2024-01-16T04:52:04.000Z</published>
+    <updated>2024-01-16T05:28:28.190Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;本文基于一个TCP&amp;amp;IP项目进行学习，主要目的是来探索网络编程的奇妙。如下为本次学习的一些网络库和知识库。&lt;/p&gt;
+&lt;h2 id=&quot;TCP-IP-协议层&quot;&gt;TCP&amp;amp;IP 协议层&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;网络接口层（Network Interface </summary>
+      
+    
+    
+    
+    <category term="编程" scheme="https://blackforest1990.github.io/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+    <category term="how to make" scheme="https://blackforest1990.github.io/tags/how-to-make/"/>
+    
+  </entry>
   
   <entry>
     <title>万历十五年读书笔记</title>
