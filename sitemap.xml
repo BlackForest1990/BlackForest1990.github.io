@@ -200,13 +200,6 @@
 
   
   <url>
-    <loc>https://blackforest1990.github.io/tags/%E5%B7%A5%E4%BD%9C/</loc>
-    <lastmod>2024-02-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blackforest1990.github.io/tags/how-to-make/</loc>
     <lastmod>2024-02-28</lastmod>
     <changefreq>weekly</changefreq>
@@ -242,6 +235,13 @@
   </url>
   
   <url>
+    <loc>https://blackforest1990.github.io/tags/%E5%B7%A5%E4%BD%9C/</loc>
+    <lastmod>2024-02-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blackforest1990.github.io/tags/%E9%BB%84%E4%BB%81%E5%AE%87/</loc>
     <lastmod>2024-02-28</lastmod>
     <changefreq>weekly</changefreq>
@@ -249,7 +249,7 @@
   </url>
   
   <url>
-    <loc>https://blackforest1990.github.io/tags/%E5%B7%A5%E4%BD%9C%E8%AF%AD%E8%A8%80/</loc>
+    <loc>https://blackforest1990.github.io/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/</loc>
     <lastmod>2024-02-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -263,7 +263,7 @@
   </url>
   
   <url>
-    <loc>https://blackforest1990.github.io/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/</loc>
+    <loc>https://blackforest1990.github.io/tags/%E5%B7%A5%E4%BD%9C%E8%AF%AD%E8%A8%80/</loc>
     <lastmod>2024-02-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -307,13 +307,6 @@
 
   
   <url>
-    <loc>https://blackforest1990.github.io/categories/%E5%A6%82%E4%BD%95%E8%B5%9A%E9%92%B1/</loc>
-    <lastmod>2024-02-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blackforest1990.github.io/categories/%E7%BC%96%E7%A8%8B/</loc>
     <lastmod>2024-02-28</lastmod>
     <changefreq>weekly</changefreq>
@@ -322,6 +315,13 @@
   
   <url>
     <loc>https://blackforest1990.github.io/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</loc>
+    <lastmod>2024-02-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blackforest1990.github.io/categories/%E5%A6%82%E4%BD%95%E8%B5%9A%E9%92%B1/</loc>
     <lastmod>2024-02-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
