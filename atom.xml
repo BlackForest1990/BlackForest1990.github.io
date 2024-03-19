@@ -6,7 +6,7 @@
   <link href="https://blackforest1990.github.io/atom.xml" rel="self"/>
   
   <link href="https://blackforest1990.github.io/"/>
-  <updated>2024-02-19T07:16:09.737Z</updated>
+  <updated>2024-03-19T06:18:37.638Z</updated>
   <id>https://blackforest1990.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>main memory</title>
+    <link href="https://blackforest1990.github.io/2024/03/19/mainmemory/"/>
+    <id>https://blackforest1990.github.io/2024/03/19/mainmemory/</id>
+    <published>2024-03-19T03:49:14.000Z</published>
+    <updated>2024-03-19T06:18:37.638Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;背景&quot;&gt;背景&lt;/h2&gt;
+&lt;p&gt;内存是现代计算机系统运行的核心。内存由大量的字节组成，每个字节都有自己的地址。CPU根据程序计数器的值从内存中获取指令。这些指令可能会导致从特定的内存地址进行额外的加载和存储。&lt;/p&gt;
+&lt;p&gt;我们从讨论与管理内存相关的几个问题开始讨论</summary>
+      
+    
+    
+    
+    <category term="操作系统" scheme="https://blackforest1990.github.io/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+    
+    <category term="内存管理" scheme="https://blackforest1990.github.io/tags/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/"/>
+    
+  </entry>
   
   <entry>
     <title>deadlock</title>
