@@ -6,7 +6,7 @@
   <link href="https://blackforest1990.github.io/atom.xml" rel="self"/>
   
   <link href="https://blackforest1990.github.io/"/>
-  <updated>2024-03-20T03:50:35.076Z</updated>
+  <updated>2024-03-22T05:16:32.185Z</updated>
   <id>https://blackforest1990.github.io/</id>
   
   <author>
@@ -15,6 +15,56 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CPU寄存器</title>
+    <link href="https://blackforest1990.github.io/2024/03/22/CPU%E5%AF%84%E5%AD%98%E5%99%A8/"/>
+    <id>https://blackforest1990.github.io/2024/03/22/CPU%E5%AF%84%E5%AD%98%E5%99%A8/</id>
+    <published>2024-03-22T05:15:22.000Z</published>
+    <updated>2024-03-22T05:16:32.185Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;CPU的寄存器列表可以根据不同的架构和位数而有所不同。以下是x86架构中常见的寄存器列表，包括通用寄存器、段寄存器以及一些特殊用途寄存器：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;通用寄存器（General Purpose Registers）：
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;AX&lt;</summary>
+      
+    
+    
+    
+    <category term="操作系统" scheme="https://blackforest1990.github.io/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+    
+    <category term="CPU知识" scheme="https://blackforest1990.github.io/tags/CPU%E7%9F%A5%E8%AF%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux Booting</title>
+    <link href="https://blackforest1990.github.io/2024/03/21/Linux-Booting/"/>
+    <id>https://blackforest1990.github.io/2024/03/21/Linux-Booting/</id>
+    <published>2024-03-21T05:09:02.000Z</published>
+    <updated>2024-03-22T05:14:23.710Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;大家好，我们要开始学习Linux kernel了，很多时候操作系统的东西都令人着迷，他是如何启动的，如何建立堆栈，如何利用内存的，如何设计的，如何应用，让我们从按下电源开始吧。&lt;/p&gt;
+&lt;h2 id=&quot;从引导加载程序内核&quot;&gt;从引导加载程序内核&lt;/h2&gt;
+&lt;h3 id=&quot;启动</summary>
+      
+    
+    
+    
+    <category term="Linux" scheme="https://blackforest1990.github.io/categories/Linux/"/>
+    
+    
+    <category term="Kernel" scheme="https://blackforest1990.github.io/tags/Kernel/"/>
+    
+  </entry>
   
   <entry>
     <title>main memory</title>
@@ -165,7 +215,7 @@
     <link href="https://blackforest1990.github.io/2024/01/18/%E4%BA%91%E8%AE%A1%E7%AE%97%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/"/>
     <id>https://blackforest1990.github.io/2024/01/18/%E4%BA%91%E8%AE%A1%E7%AE%97%E6%9E%B6%E6%9E%84%E8%AE%BE%E8%AE%A1/</id>
     <published>2024-01-18T02:35:45.000Z</published>
-    <updated>2024-02-28T05:27:24.843Z</updated>
+    <updated>2024-03-21T03:05:01.701Z</updated>
     
     
       
