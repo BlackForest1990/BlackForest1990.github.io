@@ -1,0 +1,221 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>virtual memory | 黑暗森林</title><meta name="author" content="BlackForest1990"><meta name="copyright" content="BlackForest1990"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="虚拟内存是一种允许执行部分未完全加载到内存中的进程的技术。这种方案的一个主要优势是程序可以比物理内存更大。此外，虚拟内存将主存储器抽象为一个非常大、统一的存储数组，将用户视图中的逻辑内存与物理内存分离开来。这种技术使程序员摆脱了内存存储限制的担忧。虚拟内存还允许进程轻松共享文件并实现共享内存。此外，它提供了一个高效的进程创建机制。然而，虚拟内存不易实现，如果使用不慎可能会显著降低性能。 背景 内存">
+<meta property="og:type" content="article">
+<meta property="og:title" content="virtual memory">
+<meta property="og:url" content="https://blackforest1990.github.io/2024/03/26/virtual-memory/index.html">
+<meta property="og:site_name" content="黑暗森林">
+<meta property="og:description" content="虚拟内存是一种允许执行部分未完全加载到内存中的进程的技术。这种方案的一个主要优势是程序可以比物理内存更大。此外，虚拟内存将主存储器抽象为一个非常大、统一的存储数组，将用户视图中的逻辑内存与物理内存分离开来。这种技术使程序员摆脱了内存存储限制的担忧。虚拟内存还允许进程轻松共享文件并实现共享内存。此外，它提供了一个高效的进程创建机制。然而，虚拟内存不易实现，如果使用不慎可能会显著降低性能。 背景 内存">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://blackforest1990.github.io/image/blackforest.jpg">
+<meta property="article:published_time" content="2024-03-26T02:22:06.000Z">
+<meta property="article:modified_time" content="2024-03-26T03:31:10.786Z">
+<meta property="article:author" content="BlackForest1990">
+<meta property="article:tag" content="内存管理">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://blackforest1990.github.io/image/blackforest.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://blackforest1990.github.io/2024/03/26/virtual-memory/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: true,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'virtual memory',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-03-26 11:31:10'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="黑暗森林" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/image/blackforest.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">23</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">18</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="黑暗森林"><span class="site-name">黑暗森林</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">virtual memory</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-03-26T02:22:06.000Z" title="发表于 2024-03-26 10:22:06">2024-03-26</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-03-26T03:31:10.786Z" title="更新于 2024-03-26 11:31:10">2024-03-26</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="virtual memory"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p><strong>虚拟内存是一种允许执行部分未完全加载到内存中的进程的技术</strong>。这种方案的一个主要优势是程序可以比物理内存更大。此外，虚拟内存将主存储器抽象为一个非常大、统一的存储数组，将用户视图中的逻辑内存与物理内存分离开来。这种技术使程序员摆脱了内存存储限制的担忧。<strong>虚拟内存还允许进程轻松共享文件并实现共享内存</strong>。此外，它提供了一个高效的进程创建机制。然而，虚拟内存不易实现，如果使用不慎可能会显著降低性能。</p>
+<h2 id="背景">背景</h2>
+<p>内存管理算法是必要的，因为有一个基本要求：<strong>正在执行的指令必须在物理内存中</strong>。<strong>满足这一要求的第一种方法是将整个逻辑地址空间放置在物理内存中</strong>。动态加载可以帮助缓解这个限制，但通常需要程序员采取特殊预防措施并进行额外的工作。</p>
+<p>指令必须在物理内存中才能执行的要求看起来既必要又合理；但同时也很不幸，因为它限制了程序的大小与物理内存的大小相同。事实上，对真实程序的检查表明，在许多情况下，并不需要整个程序。例如，考虑以下情况：</p>
+<ul>
+<li><strong>程序通常会包含处理异常错误条件的代码</strong>。由于这些错误在实践中很少发生，甚至几乎从不发生，因此这些代码几乎不会被执行。</li>
+<li><strong>数组、列表和表通常分配比实际需要更多的内存</strong>。例如，一个数组可能声明为 100 行 100 列，即使它很少会超过 10 行 10 列。汇编器符号表可能有 3000 个符号的空间，尽管平均程序只有不到 200 个符号。</li>
+<li><strong>程序的某些选项和功能可能很少被使用</strong>。例如，美国政府计算机上用于平衡预算的程序已经多年没有被使用过了。</li>
+</ul>
+<p>即使在那些需要整个程序的情况下，也不一定需要同时加载全部程序。 能够执行仅部分加载到内存中的程序将带来许多好处：</p>
+<ul>
+<li><strong>程序将不再受物理内存限制</strong>。用户能够为极大的虚拟地址空间编写程序，简化编程任务。</li>
+<li>由于每个用户程序所需的物理内存更少，因此可以运行更多程序，CPU利用率和吞吐量相应增加，但响应时间或周转时间不会增加。</li>
+<li>加载或交换用户程序到内存中将需要更少的I/O，因此每个用户将运行更快。</li>
+</ul>
+<img src="https://raw.githubusercontent.com/BlackForest1990/Mypic/img/img/image-20240326104303119.png" alt="image-20240326104303119" style="zoom:50%;">
+<p>进程的虚拟地址空间是指进程在内存中存储的逻辑（或虚拟）视图。通常，这个视图是进程从某个逻辑地址（比如说，地址0）开始，并以连续的内存存在，如下图所示。然而，实际上物理内存可能是以页框（page frames）的形式组织的，而分配给一个进程的物理页框可能不是连续的。<strong>将逻辑页映射到内存中的物理页框是由内存管理单元（MMU）负责的</strong>。</p>
+<img src="https://raw.githubusercontent.com/BlackForest1990/Mypic/img/img/image-20240326104527703.png" alt="image-20240326104527703" style="zoom:50%;">
+<p>堆通过动态内存分配向上增长。同样的，栈通过连续函数调用向内存下方增长。<strong>堆和栈之间的空白区域是虚拟地址空间的一部分，但只有在堆和栈增长时才需要实际的物理页</strong>。包含空洞的虚拟地址空间被称为稀疏地址空间sparse address space。使用稀疏地址空间是有益的，因为随着堆或栈段的增长，空洞可以被填充，或者如果我们希望在程序执行期间动态链接库（或可能是其他共享对象）。</p>
+<p>除了将逻辑内存与物理内存分离外，<strong>虚拟内存还通过页面共享允许两个或多个进程共享文件和内存</strong>。这带来了以下好处：</p>
+<ul>
+<li><strong>系统库可以通过将共享对象映射到虚拟地址空间中而被多个进程共享</strong>。虽然每个进程都将库视为其虚拟地址空间的一部分，但库实际所在的物理内存页面是所有进程共享的。通常，每个链接到库的进程的空间中都将库映射为只读。</li>
+<li><strong>类似地，进程可以共享内存。虚拟内存允许一个进程创建一个可与另一个进程共享的内存区域</strong>。共享此区域的进程将其视为其虚拟地址空间的一部分，但实际的物理内存页面是共享的。</li>
+<li>在进程创建时，可以通过 fork() 系统调用共享页面，从而加快进程创建的速度。</li>
+</ul>
+<img src="https://raw.githubusercontent.com/BlackForest1990/Mypic/img/img/image-20240326105633885.png" alt="image-20240326105633885" style="zoom:50%;">
+<h2 id="需求分页">需求分页</h2>
+<p>考虑一下如何将可执行程序从磁盘加载到内存中。一种选择是在程序执行时将整个程序加载到物理内存中。<strong>然而，这种方法的问题是我们可能最初并不需要将整个程序加载到内存中</strong>。另一种策略是仅在需要时加载页面。这种技术称为需求分页demanding paging，常用于虚拟内存系统中。使<strong>用需求分页的虚拟内存系统仅在程序执行期间需要时加载页面</strong>。因此，从未访问过的页面也不会加载到物理内存中。</p>
+<p>需求分页系统类似于带有交换的分页系统，其中进程驻留在磁盘中。当我们想要执行一个进程时，我们将其交换到内存中。然而，与将整个进程交换到内存不同，我们使用了一种惰性换页器lazy swapper。<strong>惰性换页器永远不会将一个页面交换到内存中，除非该页面将被需要</strong>。在需求分页系统的背景下，使用术语“换页器”是技术上不正确的。换页器操作整个进程，而页式存储管理器则涉及进程的单个页面。因此，我们在需求分页中使用“页式存储管理器pager”而不是“换页器swapper”。</p>
+<img src="https://raw.githubusercontent.com/BlackForest1990/Mypic/img/img/image-20240326110609265.png" alt="image-20240326110609265" style="zoom:50%;">
+<h3 id="基本原理">基本原理</h3>
+<p>当要将一个进程换入时，<strong>页式存储管理器会猜测在进程再次被交换出之前将使用哪些页面</strong>。页式存储管理器不是将整个进程换入内存，而是仅将那些页面换入内存。因此，它避免了将不会被使用的页面读入内存，从而减少了交换时间和所需物理内存的数量。</p>
+<p><strong>使用这种方案，我们需要一些形式的硬件支持来区分哪些页面在内存中</strong>，哪些页面在磁盘上。有效-无效位方案可以用于这个目的。然而，这次，当该位被设置为“有效”时，相关的页面既合法又在内存中。如果该位被设置为“无效”，则页面可能无效（即不在进程的逻辑地址空间中），或者有效但当前在磁盘上。将页面带入内存的页表项被设置为通常的方式，但是不在内存中的页面的页表项要么只是标记为无效，要么包含页面在磁盘上的地址。</p>
+<img src="https://raw.githubusercontent.com/BlackForest1990/Mypic/img/img/image-20240326110957430.png" alt="image-20240326110957430" style="zoom:50%;">
+<p>注意，如果进程从未尝试访问该页面，则将页面标记为无效将不会产生任何效果。<strong>因此，如果我们猜测正确，并且只换入实际需要的所有页面以及仅这些页面，那么该进程将与我们完全换入所有页面时运行的方式完全相同</strong>。当进程执行并访问驻留在内存中的页面时，执行会正常进行。</p>
+<p>但是如果进程尝试访问未被换入内存的页面会发生什么呢？对标记为无效的页面的访问会导致页面错误(page fault)。<strong>在通过页表进行地址转换时，分页硬件会注意到无效位被设置，从而导致陷阱传递给操作系统</strong>。这个陷阱是操作系统未能将所需页面换入内存的结果。处理这个页面错误的过程很简单:</p>
+<img src="https://raw.githubusercontent.com/BlackForest1990/Mypic/img/img/image-20240326111756218.png" alt="image-20240326111756218" style="zoom:50%;">
+<ol>
+<li>我们检查该进程的内部表（通常与进程控制块一起保存）来确定引用是有效还是无效的内存访问。</li>
+<li><strong>如果引用无效，我们终止该进程</strong>。如果引用有效但我们尚未换入该页面，则现在换入该页面。</li>
+<li>我们找到一个空闲帧（例如，通过从空闲帧列表中获取一个）。</li>
+<li>我们安排一个磁盘操作，将所需的页面读入新分配的帧中。</li>
+<li>当磁盘读取完成后，我们修改保存在进程和页表中的内部表，表示该页面现在在内存中。</li>
+<li>我们重新启动被陷阱中断的指令。该进程现在可以访问该页面，就好像它一直在内存中一样。</li>
+</ol>
+<p><strong>在极端情况下，我们可以开始执行一个没有任何页面在内存中的进程</strong>。当操作系统将指令指针设置为进程的第一条指令，该指令位于一个非内存驻留页面上时，进程立即出现页面错误。在将此页面换入内存后，进程继续执行，必要时出现页面错误，直到它需要的每个页面都在内存中为止。在那时，它可以执行而不再出现页面错误。这种方案是纯需求分页pure demand paging：直到需要时才将页面换入内存。</p>
+<p>理论上，一些程序可能在每次指令执行时访问多个新页面的内存（一个页面用于指令，多个页面用于数据），可能导致每个指令多次页面错误。<strong>这种情况将导致系统性能不可接受</strong>。幸运的是，对正在运行的进程的分析显示，这种行为极不可能发生。<strong>程序倾向于具有引用局部性</strong>，这导致了需求分页的合理性能。</p>
+<p>支持需求分页的硬件与支持分页和交换的硬件相同：</p>
+<ul>
+<li>页表。这个表具有通过有效-无效位或保护位的特殊值来标记条目无效的能力。</li>
+<li>辅助存储器。这个存储器保存那些不在主存储器中的页面。辅助存储器通常是一个高速磁盘。它被称为交换设备，用于此目的的磁盘部分称为交换空间。</li>
+</ul>
+<p><strong>需求分页的一个关键要求是在页面错误后能够重新启动任何指令</strong>。因为当页面错误发生时，我们会保存被中断进程的状态（寄存器、条件码、指令计数器），所以我们必须能够将进程在完全相同的位置和状态下重新启动，唯一的区别是所需页面现在在内存中并且可访问。在大多数情况下，这个要求很容易满足。页面错误可能发生在任何内存引用上。<strong>如果页面错误发生在指令取指时，我们可以重新取指再次执行指令。如果在取操作数时发生页面错误，我们必须重新取指并解码指令，然后再次取操作数</strong>。</p>
+<p>作为最坏情况的示例，考虑一个三地址指令，例如将A的内容与B相加，并将结果放入C。执行该指令的步骤如下：</p>
+<ol>
+<li>取指并解码指令（ADD）。</li>
+<li>取A。</li>
+<li>取B。</li>
+<li>将A和B相加。</li>
+<li>将和存储在C中。</li>
+</ol>
+<p>如果我们尝试将结果存储在C时出现页面错误（因为C所在的页面当前不在内存中），我们将不得不获取所需的页面，将其换入内存，更新页表，并重新启动指令。<strong>重新启动将需要重新取指，重新解码指令，再次获取两个操作数，然后再次执行加法</strong>。然而，重复工作并不多（不到一个完整指令），并且只有在发生页面错误时才需要重复。</p>
+<p>当一个指令可能修改多个不同的位置时，主要困难出现在这里。这个问题可以通过两种不同的方式解决。<strong>在一种解决方案中，微码计算并尝试访问两个块的两端</strong>。如果将要发生页面错误，它将发生在此步骤之前，即在任何内容被修改之前。然后可以进行移动操作；我们知道不会发生页面错误，因为所有相关页面都在内存中。<strong>另一种解决方案使用临时寄存器来保存被覆盖位置的值</strong>。如果发生页面错误，则在陷阱发生之前，所有旧值都会被写回内存。这个操作将内存恢复到指令开始之前的状态，以便可以重复执行指令。</p>
+<h3 id="性能">性能</h3>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://blackforest1990.github.io">BlackForest1990</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://blackforest1990.github.io/2024/03/26/virtual-memory/">https://blackforest1990.github.io/2024/03/26/virtual-memory/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://blackforest1990.github.io" target="_blank">黑暗森林</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/">内存管理</a></div><div class="post_share"><div class="social-share" data-image="/image/blackforest.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>谢谢支持</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechatpay.jpg" target="_blank"><img class="post-qr-code-img" src="/img/wechatpay.jpg"/></a><div class="post-qr-code-desc"></div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2024/03/22/CPU%E5%AF%84%E5%AD%98%E5%99%A8/" title="CPU寄存器"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">CPU寄存器</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2024/03/19/mainmemory/" title="main memory"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="fas fa-history fa-fw"></i> 2024-03-20</div><div class="title">main memory</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%83%8C%E6%99%AF"><span class="toc-number">1.</span> <span class="toc-text">背景</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%9C%80%E6%B1%82%E5%88%86%E9%A1%B5"><span class="toc-number">2.</span> <span class="toc-text">需求分页</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86"><span class="toc-number">2.1.</span> <span class="toc-text">基本原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%A7%E8%83%BD"><span class="toc-number">2.2.</span> <span class="toc-text">性能</span></a></li></ol></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 - 2024 By BlackForest1990</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">如果只允许一种声音存在，那么，唯一存在的那个声音就是谎言。</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
