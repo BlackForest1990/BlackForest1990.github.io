@@ -257,6 +257,13 @@
   </url>
   
   <url>
+    <loc>https://blackforest1990.github.io/tags/Kernel/</loc>
+    <lastmod>2024-04-14</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blackforest1990.github.io/tags/%E5%AE%9E%E7%94%A8/</loc>
     <lastmod>2024-04-14</lastmod>
     <changefreq>weekly</changefreq>
@@ -272,13 +279,6 @@
   
   <url>
     <loc>https://blackforest1990.github.io/tags/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/</loc>
-    <lastmod>2024-04-14</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blackforest1990.github.io/tags/Kernel/</loc>
     <lastmod>2024-04-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -385,14 +385,14 @@
   </url>
   
   <url>
-    <loc>https://blackforest1990.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
+    <loc>https://blackforest1990.github.io/categories/Linux/</loc>
     <lastmod>2024-04-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://blackforest1990.github.io/categories/Linux/</loc>
+    <loc>https://blackforest1990.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2024-04-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
