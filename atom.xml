@@ -6,7 +6,7 @@
   <link href="https://blackforest1990.github.io/atom.xml" rel="self"/>
   
   <link href="https://blackforest1990.github.io/"/>
-  <updated>2024-04-11T07:38:46.056Z</updated>
+  <updated>2024-04-17T03:23:33.929Z</updated>
   <id>https://blackforest1990.github.io/</id>
   
   <author>
@@ -15,6 +15,55 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>位</title>
+    <link href="https://blackforest1990.github.io/2024/04/17/%E4%BD%8D/"/>
+    <id>https://blackforest1990.github.io/2024/04/17/%E4%BD%8D/</id>
+    <published>2024-04-17T02:47:49.000Z</published>
+    <updated>2024-04-17T03:23:33.929Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Bits速查表&quot;&gt;Bits速查表&lt;/h2&gt;
+&lt;img src=&quot;https://raw.githubusercontent.com/BlackForest1990/Mypic/img/img/下载.png&quot; alt=&quot;下载&quot; style=&quot;zoom:50%;&quot;&gt;
+</summary>
+      
+    
+    
+    
+    <category term="编程" scheme="https://blackforest1990.github.io/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+    <category term="bit" scheme="https://blackforest1990.github.io/tags/bit/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>算法</title>
+    <link href="https://blackforest1990.github.io/2024/04/17/%E7%AE%97%E6%B3%95/"/>
+    <id>https://blackforest1990.github.io/2024/04/17/%E7%AE%97%E6%B3%95/</id>
+    <published>2024-04-17T01:33:17.000Z</published>
+    <updated>2024-04-17T01:45:56.604Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;搜索算法&quot;&gt;搜索算法&lt;/h2&gt;
+&lt;h3 id=&quot;二分查找&quot;&gt;二分查找&lt;/h3&gt;
+&lt;p&gt;二分搜索被定义为一种在排序数组中使用的搜索算法，通过重复将搜索间隔一分为二。二分查找的思想是利用数组已排序的信息，将时间复杂度降低到O(log N)。&lt;/p&gt;
+&lt;img src=</summary>
+      
+    
+    
+    
+    <category term="编程" scheme="https://blackforest1990.github.io/categories/%E7%BC%96%E7%A8%8B/"/>
+    
+    
+    <category term="算法" scheme="https://blackforest1990.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>“新小说提纲”</title>
@@ -116,7 +165,7 @@
     <link href="https://blackforest1990.github.io/2024/03/21/Linux-Booting/"/>
     <id>https://blackforest1990.github.io/2024/03/21/Linux-Booting/</id>
     <published>2024-03-21T05:09:02.000Z</published>
-    <updated>2024-04-16T08:18:08.616Z</updated>
+    <updated>2024-04-16T08:18:43.383Z</updated>
     
     
       
