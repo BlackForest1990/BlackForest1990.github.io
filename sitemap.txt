@@ -1,4 +1,5 @@
 https://blackforest1990.github.io/2024/04/19/Initialization/
+https://blackforest1990.github.io/2024/04/19/Untitled/
 https://blackforest1990.github.io/2024/03/21/Linux-Booting/
 https://blackforest1990.github.io/2024/04/03/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/
 https://blackforest1990.github.io/2024/04/17/%E4%BD%8D/
@@ -28,8 +29,8 @@ https://blackforest1990.github.io/categories/index.html
 https://blackforest1990.github.io/tags/index.html
 https://blackforest1990.github.io/
 https://blackforest1990.github.io/tags/CPU%E7%9F%A5%E8%AF%86/
-https://blackforest1990.github.io/tags/Kernel/
 https://blackforest1990.github.io/tags/%E8%BF%9B%E7%A8%8B%E7%AE%A1%E7%90%86/
+https://blackforest1990.github.io/tags/Kernel/
 https://blackforest1990.github.io/tags/how-to-make/
 https://blackforest1990.github.io/tags/%E5%AE%9E%E7%94%A8/
 https://blackforest1990.github.io/tags/%E5%B7%A5%E5%85%B7%E4%B9%A6/
