@@ -6,7 +6,7 @@
   <link href="https://blackforest1990.github.io/atom.xml" rel="self"/>
   
   <link href="https://blackforest1990.github.io/"/>
-  <updated>2024-04-17T06:18:24.718Z</updated>
+  <updated>2024-04-19T01:55:04.187Z</updated>
   <id>https://blackforest1990.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Initialization</title>
+    <link href="https://blackforest1990.github.io/2024/04/19/Initialization/"/>
+    <id>https://blackforest1990.github.io/2024/04/19/Initialization/</id>
+    <published>2024-04-19T01:43:12.000Z</published>
+    <updated>2024-04-19T01:55:04.187Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1&gt;内核初始化流程&lt;/h1&gt;
+&lt;p&gt;了解到整个内核初始化的完整周期，从内核解压之后的第一步到内核自身运行的第一个进程&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;内核解压之后的首要步骤 - 描述内核中的首要步骤。&lt;/li&gt;
+&lt;li&gt;早期的中断和异常控制 - 描述了早期的中断初始化和早期的缺页处</summary>
+      
+    
+    
+    
+    <category term="Linux" scheme="https://blackforest1990.github.io/categories/Linux/"/>
+    
+    
+    <category term="Kernel" scheme="https://blackforest1990.github.io/tags/Kernel/"/>
+    
+  </entry>
   
   <entry>
     <title>位</title>
@@ -165,14 +191,14 @@
     <link href="https://blackforest1990.github.io/2024/03/21/Linux-Booting/"/>
     <id>https://blackforest1990.github.io/2024/03/21/Linux-Booting/</id>
     <published>2024-03-21T05:09:02.000Z</published>
-    <updated>2024-04-16T08:18:43.383Z</updated>
+    <updated>2024-04-19T01:47:08.873Z</updated>
     
     
       
       
     <summary type="html">&lt;p&gt;大家好，我们要开始学习Linux kernel了，很多时候操作系统的东西都令人着迷，他是如何启动的，如何建立堆栈，如何利用内存的，如何设计的，如何应用，让我们从按下电源开始吧。&lt;/p&gt;
-&lt;p&gt;[TOC]&lt;/p&gt;
-&lt;h2 id=&quot;从引导加载程序内核&quot;&gt;从引导加载程序内核&lt;/h</summary>
+&lt;h2 id=&quot;从引导加载程序内核&quot;&gt;从引导加载程序内核&lt;/h2&gt;
+&lt;h3 id=&quot;启动</summary>
       
     
     
