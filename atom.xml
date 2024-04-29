@@ -6,7 +6,7 @@
   <link href="https://blackforest1990.github.io/atom.xml" rel="self"/>
   
   <link href="https://blackforest1990.github.io/"/>
-  <updated>2024-04-19T08:22:15.363Z</updated>
+  <updated>2024-04-29T07:40:45.943Z</updated>
   <id>https://blackforest1990.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>汇编语言</title>
+    <link href="https://blackforest1990.github.io/2024/04/29/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80/"/>
+    <id>https://blackforest1990.github.io/2024/04/29/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80/</id>
+    <published>2024-04-29T06:43:46.000Z</published>
+    <updated>2024-04-29T07:40:45.943Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h1&gt;汇编语言&lt;/h1&gt;
+&lt;p&gt;汇编语言是基于机器语言的一种抽象，具体来说，计算机艺术，是从门电路-&amp;gt;CMOS电路-&amp;gt;assemble-&amp;gt;C的层层抽象。&lt;/p&gt;
+&lt;p&gt;本文具体阐述的是关于汇编的抽象，不讨论具体的电路设计。&lt;/p&gt;
+&lt;p&gt;汇编语言发展至今，有以</summary>
+      
+    
+    
+    
+    <category term="编程语言" scheme="https://blackforest1990.github.io/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+    
+    <category term="汇编语言" scheme="https://blackforest1990.github.io/tags/%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
   
   <entry>
     <title>Initialization</title>
@@ -157,32 +182,6 @@
     
     
     <category term="内存管理" scheme="https://blackforest1990.github.io/tags/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>CPU寄存器</title>
-    <link href="https://blackforest1990.github.io/2024/03/22/CPU%E5%AF%84%E5%AD%98%E5%99%A8/"/>
-    <id>https://blackforest1990.github.io/2024/03/22/CPU%E5%AF%84%E5%AD%98%E5%99%A8/</id>
-    <published>2024-03-22T05:15:22.000Z</published>
-    <updated>2024-03-22T05:16:32.185Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;CPU的寄存器列表可以根据不同的架构和位数而有所不同。以下是x86架构中常见的寄存器列表，包括通用寄存器、段寄存器以及一些特殊用途寄存器：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;通用寄存器（General Purpose Registers）：
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;AX&lt;</summary>
-      
-    
-    
-    
-    <category term="操作系统" scheme="https://blackforest1990.github.io/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
-    
-    
-    <category term="CPU知识" scheme="https://blackforest1990.github.io/tags/CPU%E7%9F%A5%E8%AF%86/"/>
     
   </entry>
   
