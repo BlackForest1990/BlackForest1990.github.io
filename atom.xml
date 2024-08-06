@@ -71,7 +71,7 @@
     <link href="https://blackforest1990.github.io/2024/04/19/Initialization/"/>
     <id>https://blackforest1990.github.io/2024/04/19/Initialization/</id>
     <published>2024-04-19T01:43:12.000Z</published>
-    <updated>2024-08-04T07:53:39.593Z</updated>
+    <updated>2024-08-04T08:43:21.395Z</updated>
     
     
       
@@ -215,14 +215,12 @@
     <link href="https://blackforest1990.github.io/2024/03/21/Linux-Booting/"/>
     <id>https://blackforest1990.github.io/2024/03/21/Linux-Booting/</id>
     <published>2024-03-21T05:09:02.000Z</published>
-    <updated>2024-08-01T02:49:10.771Z</updated>
+    <updated>2024-08-04T08:45:09.659Z</updated>
     
     
       
       
-    <summary type="html">&lt;p&gt;大家好，我们要开始学习Linux kernel了，很多时候操作系统的东西都令人着迷，他是如何启动的，如何建立堆栈，如何利用内存的，如何设计的，如何应用，让我们从按下电源开始吧。&lt;/p&gt;
-&lt;h2 id=&quot;从引导加载程序内核&quot;&gt;从引导加载程序内核&lt;/h2&gt;
-&lt;h3 id=&quot;启动</summary>
+    <summary type="html">&lt;p&gt;大家好，我们要开始学习Linux kernel了，自从1991 年 linus Torvalds开发出最初的Linux，它作为一个适用于基于Intel 80386微处理器的IBM PC兼容机的操作系统，他是如何启动的，如何建立堆栈，如何利用内存的，如何设计的，如何应用，让我</summary>
       
     
     
@@ -239,7 +237,7 @@
     <link href="https://blackforest1990.github.io/2024/03/19/mainmemory/"/>
     <id>https://blackforest1990.github.io/2024/03/19/mainmemory/</id>
     <published>2024-03-19T03:49:14.000Z</published>
-    <updated>2024-03-20T03:50:35.076Z</updated>
+    <updated>2024-08-06T06:42:53.779Z</updated>
     
     
       
@@ -473,7 +471,7 @@
     <link href="https://blackforest1990.github.io/2023/12/11/%E8%BF%9B%E7%A8%8B%E5%90%8C%E6%AD%A5/"/>
     <id>https://blackforest1990.github.io/2023/12/11/%E8%BF%9B%E7%A8%8B%E5%90%8C%E6%AD%A5/</id>
     <published>2023-12-11T02:27:52.000Z</published>
-    <updated>2023-12-29T06:50:54.577Z</updated>
+    <updated>2024-08-06T03:16:13.983Z</updated>
     
     
       
@@ -518,7 +516,7 @@
     <link href="https://blackforest1990.github.io/2023/11/28/%E8%BF%9B%E7%A8%8B/"/>
     <id>https://blackforest1990.github.io/2023/11/28/%E8%BF%9B%E7%A8%8B/</id>
     <published>2023-11-28T06:01:38.000Z</published>
-    <updated>2024-01-09T05:17:03.533Z</updated>
+    <updated>2024-08-06T03:17:02.263Z</updated>
     
     
       
