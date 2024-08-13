@@ -71,7 +71,7 @@
     <link href="https://blackforest1990.github.io/2024/04/19/Initialization/"/>
     <id>https://blackforest1990.github.io/2024/04/19/Initialization/</id>
     <published>2024-04-19T01:43:12.000Z</published>
-    <updated>2024-08-04T08:43:21.395Z</updated>
+    <updated>2024-08-13T03:59:21.856Z</updated>
     
     
       
@@ -86,6 +86,8 @@
     
     
     <category term="Linux" scheme="https://blackforest1990.github.io/categories/Linux/"/>
+    
+    <category term="操作系统" scheme="https://blackforest1990.github.io/categories/Linux/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     
     
     <category term="Kernel" scheme="https://blackforest1990.github.io/tags/Kernel/"/>
@@ -142,29 +144,6 @@
   </entry>
   
   <entry>
-    <title>“新小说提纲”</title>
-    <link href="https://blackforest1990.github.io/2024/04/03/%E2%80%9C%E6%96%B0%E5%B0%8F%E8%AF%B4%E6%8F%90%E7%BA%B2%E2%80%9D/"/>
-    <id>https://blackforest1990.github.io/2024/04/03/%E2%80%9C%E6%96%B0%E5%B0%8F%E8%AF%B4%E6%8F%90%E7%BA%B2%E2%80%9D/</id>
-    <published>2024-04-03T07:34:27.000Z</published>
-    <updated>2024-04-11T07:38:46.056Z</updated>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;背景：三国时代，灵气回归，改变了地球的环境，修道和修武成了唯一的依仗，同时基因锁的打开，让人类的大脑重新进化，开始探索星球，上古疑似拥有璀璨的文明，但同时可能存在巨大威胁。&lt;/p&gt;
-&lt;p&gt;猪脚：幽州人，装逼大王，实用主义者，人类之盾，自称汉室宗亲，make 大汉 great</summary>
-      
-    
-    
-    
-    <category term="策划" scheme="https://blackforest1990.github.io/categories/%E7%AD%96%E5%88%92/"/>
-    
-    
-    <category term="小说提纲" scheme="https://blackforest1990.github.io/tags/%E5%B0%8F%E8%AF%B4%E6%8F%90%E7%BA%B2/"/>
-    
-  </entry>
-  
-  <entry>
     <title>数据结构</title>
     <link href="https://blackforest1990.github.io/2024/04/03/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     <id>https://blackforest1990.github.io/2024/04/03/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</id>
@@ -215,7 +194,7 @@
     <link href="https://blackforest1990.github.io/2024/03/21/Linux-Booting/"/>
     <id>https://blackforest1990.github.io/2024/03/21/Linux-Booting/</id>
     <published>2024-03-21T05:09:02.000Z</published>
-    <updated>2024-08-07T04:30:40.412Z</updated>
+    <updated>2024-08-13T03:59:49.870Z</updated>
     
     
       
@@ -226,6 +205,8 @@
     
     
     <category term="Linux" scheme="https://blackforest1990.github.io/categories/Linux/"/>
+    
+    <category term="操作系统" scheme="https://blackforest1990.github.io/categories/Linux/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     
     
     <category term="Kernel" scheme="https://blackforest1990.github.io/tags/Kernel/"/>
