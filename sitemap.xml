@@ -2,15 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blackforest1990.github.io/2024/08/13/%E4%B8%AD%E6%96%AD%E5%92%8C%E5%BC%82%E5%B8%B8/</loc>
-    
-    <lastmod>2024-08-13</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blackforest1990.github.io/2024/03/21/Linux-Booting/</loc>
     
     <lastmod>2024-08-13</lastmod>
@@ -291,13 +282,6 @@
   </url>
   
   <url>
-    <loc>https://blackforest1990.github.io/tags/Kernel/</loc>
-    <lastmod>2024-08-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blackforest1990.github.io/tags/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/</loc>
     <lastmod>2024-08-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -305,21 +289,14 @@
   </url>
   
   <url>
+    <loc>https://blackforest1990.github.io/tags/Kernel/</loc>
+    <lastmod>2024-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blackforest1990.github.io/tags/%E9%BB%84%E4%BB%81%E5%AE%87/</loc>
-    <lastmod>2024-08-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blackforest1990.github.io/tags/%E4%B8%AD%E6%96%AD/</loc>
-    <lastmod>2024-08-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blackforest1990.github.io/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/</loc>
     <lastmod>2024-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -347,13 +324,6 @@
   </url>
   
   <url>
-    <loc>https://blackforest1990.github.io/tags/%E5%AF%BC%E8%AE%BA/</loc>
-    <lastmod>2024-08-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blackforest1990.github.io/tags/%E5%B7%A5%E4%BD%9C%E8%AF%AD%E8%A8%80/</loc>
     <lastmod>2024-08-13</lastmod>
     <changefreq>weekly</changefreq>
@@ -361,7 +331,28 @@
   </url>
   
   <url>
+    <loc>https://blackforest1990.github.io/tags/%E4%BA%91%E8%AE%A1%E7%AE%97/</loc>
+    <lastmod>2024-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blackforest1990.github.io/tags/%E5%AF%BC%E8%AE%BA/</loc>
+    <lastmod>2024-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blackforest1990.github.io/tags/%E4%B8%8E%E8%99%8E%E8%B0%8B%E7%9A%AE/</loc>
+    <lastmod>2024-08-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blackforest1990.github.io/tags/%E7%94%B5%E4%BF%A1%E8%BF%90%E8%90%A5%E5%95%86/</loc>
     <lastmod>2024-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -382,7 +373,7 @@
   </url>
   
   <url>
-    <loc>https://blackforest1990.github.io/tags/%E7%94%B5%E4%BF%A1%E8%BF%90%E8%90%A5%E5%95%86/</loc>
+    <loc>https://blackforest1990.github.io/tags/%E7%A7%91%E5%B9%BB/</loc>
     <lastmod>2024-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -390,13 +381,6 @@
   
   <url>
     <loc>https://blackforest1990.github.io/tags/%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2024-08-13</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blackforest1990.github.io/tags/%E7%A7%91%E5%B9%BB/</loc>
     <lastmod>2024-08-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
