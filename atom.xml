@@ -6,7 +6,7 @@
   <link href="https://blackforest1990.github.io/atom.xml" rel="self"/>
   
   <link href="https://blackforest1990.github.io/"/>
-  <updated>2024-07-18T02:40:24.413Z</updated>
+  <updated>2024-08-27T05:28:29.990Z</updated>
   <id>https://blackforest1990.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>linux资源收集</title>
+    <link href="https://blackforest1990.github.io/2024/08/27/linux%E8%B5%84%E6%BA%90%E6%94%B6%E9%9B%86/"/>
+    <id>https://blackforest1990.github.io/2024/08/27/linux%E8%B5%84%E6%BA%90%E6%94%B6%E9%9B%86/</id>
+    <published>2024-08-27T05:01:08.000Z</published>
+    <updated>2024-08-27T05:28:29.990Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;书&quot;&gt;书&lt;/h2&gt;
+&lt;p&gt;深入理解linux内核第四版&lt;/p&gt;
+&lt;p&gt;鸟哥的Linux私房菜-基础学习篇&lt;/p&gt;
+&lt;p&gt;鸟哥的Linux私房菜服务器架设篇&lt;/p&gt;
+&lt;p&gt;Linux Shell脚本攻略&lt;/p&gt;
+&lt;p&gt;C程序设计语言(第2版·新版)非扫描版-The_</summary>
+      
+    
+    
+    
+    <category term="Linux" scheme="https://blackforest1990.github.io/categories/Linux/"/>
+    
+    
+    <category term="资源" scheme="https://blackforest1990.github.io/tags/%E8%B5%84%E6%BA%90/"/>
+    
+  </entry>
   
   <entry>
     <title>历史中的魅力发言</title>
@@ -194,12 +221,12 @@
     <link href="https://blackforest1990.github.io/2024/03/21/Linux-Booting/"/>
     <id>https://blackforest1990.github.io/2024/03/21/Linux-Booting/</id>
     <published>2024-03-21T05:09:02.000Z</published>
-    <updated>2024-08-13T03:59:49.870Z</updated>
+    <updated>2024-08-27T05:13:41.119Z</updated>
     
     
       
       
-    <summary type="html">&lt;p&gt;大家好，我们要开始学习Linux kernel了，自从1991 年 linus Torvalds开发出最初的Linux，它作为一个适用于基于Intel 80386微处理器的IBM PC兼容机的操作系统，他是如何启动的，如何建立堆栈，如何利用内存的，如何设计的，如何应用，让我</summary>
+    <summary type="html">&lt;p&gt;根据linus的阐述，Linux有以下功能： true multitasking, virtual memory, shared libraries, demand loading, shared copy-on-write executables, proper memo</summary>
       
     
     
@@ -218,7 +245,7 @@
     <link href="https://blackforest1990.github.io/2024/03/19/mainmemory/"/>
     <id>https://blackforest1990.github.io/2024/03/19/mainmemory/</id>
     <published>2024-03-19T03:49:14.000Z</published>
-    <updated>2024-08-08T03:28:41.295Z</updated>
+    <updated>2024-08-18T07:05:15.844Z</updated>
     
     
       
@@ -452,7 +479,7 @@
     <link href="https://blackforest1990.github.io/2023/12/11/%E8%BF%9B%E7%A8%8B%E5%90%8C%E6%AD%A5/"/>
     <id>https://blackforest1990.github.io/2023/12/11/%E8%BF%9B%E7%A8%8B%E5%90%8C%E6%AD%A5/</id>
     <published>2023-12-11T02:27:52.000Z</published>
-    <updated>2024-08-06T03:16:13.983Z</updated>
+    <updated>2024-08-15T07:34:15.469Z</updated>
     
     
       
